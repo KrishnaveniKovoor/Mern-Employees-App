@@ -1,5 +1,5 @@
 import exp from "express";
-import { EmpModel } from "../models/EmpModel.js";
+import { EmpModel } from "../MODELS/EmpModel.js";
 
 export const empRoute = exp.Router();
 
@@ -31,7 +31,7 @@ empRoute.put("/employees/:id", async (req, res, next) => {
   try {
     const modifiedEmp = req.body;
 
-    
+
     const updatedEmp = await EmpModel.findByIdAndUpdate(
       req.params.id,
       { $set: modifiedEmp },

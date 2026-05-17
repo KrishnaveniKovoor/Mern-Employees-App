@@ -1,0 +1,13 @@
+{
+  "name": "mern-employees-app",
+  "version": "1.0.0",
+  "description": "MERN Employees App",
+  "scripts": {
+    "install-backend": "cd BACKEND && npm install",
+    "start": "cd BACKEND && node server.js",
+    "build": "cd FRONTEND && npm install && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
