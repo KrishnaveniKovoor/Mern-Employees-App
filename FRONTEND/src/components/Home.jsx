@@ -6,7 +6,7 @@ function Home() {
   const {counter,changeCounter}=useContext(counterContextObj)
   
 //call useCounter hook to get state of Zustand store
-  console.log("Home")
+
   return (
     <div className='text-center'>
       <h1 className='text-4xl'>Counter:{counter}</h1>
